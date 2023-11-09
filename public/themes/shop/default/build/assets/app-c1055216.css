@@ -4051,3 +4051,60 @@ html {
     background-color: red !important;
     color: #fff;
 }
+
+.box {
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+.box:after {
+    content: "";
+    background-color: #000;
+    position: absolute;
+    width: 420px;
+    height: 280px;
+    right: 0px;
+    top: -120px;
+    margin: 0 auto;
+    display: flex;
+
+    left: 0;
+    z-index: -1;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+}
+
+.section-gap {
+    margin: 90px 0 40px 0 !important;
+}
+
+.cycle_section {
+    padding-top: 30px;
+    width: 100%;
+    float: left;
+    padding-bottom: 90px;
+    background: url("../assets/bg-curl.svg") fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 1px solid #4d4d4d;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.featured {
+    width: 100%;
+    padding: 20px;
+    background: rgb(121, 121, 121);
+    background: linear-gradient(
+        90deg,
+        rgba(121, 121, 121, 1) 0%,
+        rgba(179, 179, 179, 1) 35%,
+        rgba(241, 244, 245, 1) 100%
+    );
+}
+
+footer {
+    background-color: rgb(33, 33, 33) !important;
+    color: #fff;
+}
